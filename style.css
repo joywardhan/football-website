@@ -33,13 +33,26 @@ body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;}
 .footage{background-color: #f1f1f1;}
 .footage iframe{width: 100%;}
 .footage h1{text-transform: capitalize;font-size: 30px;}
-/* footer */
-#footer{display: flex;justify-content: center;align-items: center;}
-.footer-main-div{width: 54%;text-align: center;}
+/* goolkeeper */
+.team-goolkeeper{display: flex;justify-content: center;align-items: center;}
+#team-member h1{text-transform: uppercase;font-size: 40px;text-align: center;color: tomato;}
+.team-main-div{display:flex;justify-content: center;align-items: center;width: 870px;}
+
+
+.goolkeeper-img img{width: 100%;}
+.goolkeeper{padding: 15px;}
+
+.goolkeeper-content h3{text-transform: uppercase;margin-bottom: 10px;}
+.
+
+/* footer */ 
+
+
+.footer-main-div{width: 54%;text-align: center;margin-top: 50px;}
 .footer-main-div img{width: 100%;margin-bottom: 30px;}
 .footer-icon{display: flex;justify-content: center;align-items: center;}
 .footer-icon i{margin-right:10px ;padding: 5px;border-radius:20px;background: #d3d3d3;}
-.footer-main-div p{color: #222;font-size: 13px;}
+.footer-main-div p{color: #222;font-size: 13px;text-align: center;}
 
 /* @media-query */
 @media only screen and (max-width:688px){
@@ -60,6 +73,7 @@ body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;}
                 .news-div{
                     grid-template-columns: repeat(1,1fr);
                 }
-                .footer p{width: 100%;}
+                .team-main-div{display: flex;flex-direction: column;}
+                #footer p{width: 100%;}
                
 }
