@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;}
 /* conmebol section */
 #conmebol{background-color: #2D25A0;height: 591px; display: flex;justify-content: center;align-items: center;}
-.conmebol-main-div{display: flex;justify-content: center;align-items: center;width: 870px;}
-.article{width: 485px;color: #fff;}
-.article h1{text-transform: capitalize;font-size: 51px;width: 100%;line-height: 70px;}
-.article a{text-decoration: none;color: #fff;padding: 10px ;background-color: #E02C6D;text-transform: capitalize;}
-.article a i{margin-left: 10px;}
-.image{width: 556px;}
+.conmebol-main-div{display: flex;justify-content: space-between;align-items: center;width: 870px;}
+.content{width: 38%;color: #fff;}
+.content h1{text-transform: capitalize;font-size: 42px;width: 100%;line-height: 65px;margin-bottom: 20px;margin-top: 0px;}
+.content a{text-decoration: none;color: #fff;padding: 10px 24px;background-color: #E02C6D;text-transform: capitalize;font-size: 14px;}
+.content a i{margin-left: 10px;}
+.image{width:50%;}
 .image img{width: 90%;}
+/* players-portfolio */
+#players-portfolio{display: flex;justify-content: center;align-items: center;padding-top: 50px;background-color: #dfdfdf;}
+.players{width: 700px;display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 20px;}
+.player{background-color: #fff; padding: 10px;border-radius: 3px;}
+.player-img img{width:100%;}
+.player-content h3{text-transform: capitalize;margin: 0px 0px;font-size: 22px;color: #363636;}
+.player-content p{font-size: 13px;margin-top: 5px;color: #444;}
