@@ -3,8 +3,8 @@ body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;}
 /* conmebol section */
 #conmebol{background-color: #2D25A0;height: 591px; display: flex;justify-content: center;align-items: center;}
 .conmebol-main-div{display: flex;justify-content: space-between;align-items: center;width: 870px;}
-.content{width: 38%;color: #fff;}
-.content h1{text-transform: capitalize;font-size: 42px;width: 100%;line-height: 65px;margin-bottom: 20px;margin-top: 0px;}
+.content{width: 50%;color: #fff;}
+.content h1{text-transform: capitalize;font-size: 42px;width: 100%;line-height: 65px;margin-bottom: 20px;margin-top: 0px;width: 80%;}
 .content a{text-decoration: none;color: #fff;padding: 10px 24px;background-color: #E02C6D;text-transform: capitalize;font-size: 14px;}
 .content a i{margin-left: 10px;}
 .image{width:50%;}
@@ -19,8 +19,8 @@ body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;}
 /* latest-news */
 #latest-news{margin: 50px 0px;}
 .latest-title{text-align: center;text-transform: uppercase;font-size: 45px;color: #e11f1f;}
-.news-div{width: 870px;display: flex;justify-content: space-between;align-items: center;}
-.highlights{width: 52%;display: flex;justify-content: center;align-items: center;background-color: #f3f3f3}
+.news-div{width: 870px;display: grid;grid-template-columns:repeat(2,1fr);}
+.highlights{display: flex;justify-content: center;align-items: center;background-color: #f3f3f3}
 .highlight-img{width: 50%;}
 .highlights img{width: 90%;height:170px;}
 .news{display: flex;justify-content: center;align-items: center;}
@@ -28,13 +28,36 @@ body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;}
 
 .highlight-news h3{font-size: 20px;text-transform: capitalize;}
 .highlight-news p{font-size: 14px;color: #444;}
-.footage{width: 45%;background-color: #f1f1f1;}
+.footage{background-color: #f1f1f1;}
 .footage iframe{width: 100%;}
 .footage h1{text-transform: capitalize;font-size: 30px;}
 /* footer */
 #footer{display: flex;justify-content: center;align-items: center;}
-.footer-main-div{width: 35%;text-align: center;}
+.footer-main-div{width: 54%;text-align: center;}
 .footer-main-div img{width: 100%;margin-bottom: 30px;}
 .footer-icon{display: flex;justify-content: center;align-items: center;}
 .footer-icon i{margin-right:10px ;padding: 5px;border-radius:20px;background: #d3d3d3;}
 .footer-main-div p{color: #222;font-size: 13px;}
+
+/* @media-query */
+@media only screen and (max-width:688px){
+               .conmebol-main-div{
+                   display: flex;
+                   flex-direction: column;
+               }
+               .content{
+                   width: 90%;
+               }
+               .players{
+                   grid-template-columns: repeat(1,1fr);
+               }
+               .image{
+                   width: 90%;
+                   margin-top: 30px;
+                }
+                .news-div{
+                    grid-template-columns: repeat(1,1fr);
+                }
+                .footer p{width: 100%;}
+               
+}
